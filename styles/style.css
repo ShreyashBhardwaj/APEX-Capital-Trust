@@ -1,18 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Noto%20Sans%20Miao:700|Noto%20Sans%20Miao:400");
 
 :root {
-  /* Core */
-  --text: #000000; /* Black text */
+  --text: #000000; /* Black for text */
   --background: #ffffff; /* White background */
-
-  /* Metallic Shades */
-  --primary: #c0c0c0; /* Medium metallic silver */
-  --primary-dark: #8c8c8c; /* Darker brushed steel */
-  --secondary: #e5e5e5; /* Light silver for sections/cards */
-  --secondary-dark: #b0b0b0; /* Slightly darker metallic grey */
-
-  /* Accent / Glow */
-  --accent: #3b82f6; /* Electric blue for buttons/glow */
+  --primary: #6a1b1a; /* Maroon from your logo */
+  --secondary: #e6aa33; /* Gold/Metallic accent */
+  --accent: #800002; /* Optional deeper maroon/red */
+  --white: #ffffff; /* White color */
 }
 
 h1,
