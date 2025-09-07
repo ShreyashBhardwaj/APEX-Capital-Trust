@@ -1,13 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Noto%20Sans%20Miao:700|Noto%20Sans%20Miao:400");
 
 :root {
-  --text: #13140e;
-  --background: #fffff7;
-  --primary: #214d2c;
-  --primary-dark: #1a4020;
-  --secondary: #40882b;
-  --secondary-dark: #2b7a12;
-  --accent: #800002;
+  /* Core */
+  --text: #000000; /* Black text */
+  --background: #ffffff; /* White background */
+
+  /* Metallic Shades */
+  --primary: #c0c0c0; /* Medium metallic silver */
+  --primary-dark: #8c8c8c; /* Darker brushed steel */
+  --secondary: #e5e5e5; /* Light silver for sections/cards */
+  --secondary-dark: #b0b0b0; /* Slightly darker metallic grey */
+
+  /* Accent / Glow */
+  --accent: #3b82f6; /* Electric blue for buttons/glow */
 }
 
 h1,
@@ -55,7 +60,7 @@ h5 {
   transform: scale(1.25);
 }
 
-.google{
+.google {
   background-color: #f52c2c;
 }
 
@@ -89,6 +94,14 @@ body {
 }
 .moveUpY:hover {
   transform: translateY(-5px);
+}
+
+.box-shadowblack {
+  transition: all 0.2s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.box-shadowblack:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.545);
 }
 
 @keyframes float {
