@@ -397,12 +397,15 @@ document.getElementById("riskProfilerForm").addEventListener("submit", (e) => {
           formData.append("file", imgBlob, "image.jpeg");
           formData.append("email", emailAddress);
           formData.append("type", "Risk Profiling Analysis");
-          formData.append("sender", "CNR Financial");
+          formData.append("sender", "APEX Capital Trust");
 
-          fetch("https://operations.webclass.in/api/navCalculator/emailAnalysisReport", {
-            method: "POST",
-            body: formData,
-          })
+          fetch(
+            "https://operations.webclass.in/api/navCalculator/emailAnalysisReport",
+            {
+              method: "POST",
+              body: formData,
+            }
+          )
             .then((response) => response.json())
             .then((data) => {
               console.log("Success:", data);
