@@ -28,21 +28,72 @@ h5 {
 .swiper {
   width: 100%;
 }
-
 .social-widget {
   position: fixed;
-  bottom: 24px;
-  right: 24px;
+  bottom: max(24px, env(safe-area-inset-bottom, 0) + 16px);
+  right: max(24px, env(safe-area-inset-right, 0) + 16px);
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 12px;
   z-index: 1000;
 }
 
+.social-main {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #333;
+  color: white;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  touch-action: manipulation;
+}
+
+.social-main.active {
+  transform: rotate(45deg);
+}
+
+/* Icons container (hidden by default) */
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  will-change: opacity, transform;
+}
+
+/* SHOW on CLICK (class toggled by JS) */
+.social-widget.open .social-icons {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* SHOW on HOVER (desktop pointers only) */
+@media (hover: hover) and (pointer: fine) {
+  .social-widget:hover .social-icons {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+  .social-widget:hover .social-main {
+    transform: rotate(45deg);
+  }
+}
+
 .social-icon {
-  width: 60px;
-  height: 60px;
-  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
   color: white;
   font-size: 20px;
   display: flex;
@@ -57,24 +108,23 @@ h5 {
   transform: scale(1.25);
 }
 
-.google {
-  background-color: #f52c2c;
-}
-
 .facebook {
   background-color: #1877f2;
 }
-
 .whatsapp {
   background-color: #25d366;
 }
-
 .instagram {
   background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af, #515bd4);
 }
-
 .linkedin {
   background-color: #0077b5;
+}
+.twitter {
+  background-color: #000;
+}
+.youtube {
+  background-color: red;
 }
 
 body {
