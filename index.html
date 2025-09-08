@@ -91,14 +91,54 @@
 
                 <!-- About -->
                 <li>
-                  <a href="/about.html" class="block py-2 px-4 font-bold text-lg text-[var(--white)] transition duration-300 
-                         hover:text-[var(--secondary)] hover:underline">About</a>
+                  <a href="/about.html" class="block py-2 px-2 font-bold text-md text-[var(--white)] transition duration-300 
+                         hover:text-[var(--secondary)]">About</a>
+                </li>
+
+                <!-- Services Dropdown -->
+                <li class="relative group">
+                  <button id="productsDropdownButton" data-dropdown-toggle="productsDropdown"
+                    class="flex items-center py-2 px-2 font-bold text-md text-[var(--white)] hover:text-[var(--secondary)] transition duration-300">
+                    Product
+                    <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.25 8.29a.75.75 0 01-.02-1.06z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                  <div id="productsDropdown" class="z-10 hidden bg-white rounded-lg shadow w-44">
+                    <ul class="py-2 text-sm text-gray-700 text-center">
+                      <li><a href="/mutualfunds.html"
+                          class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--white)]">Mutual Funds</a>
+                      </li>
+                      <li><a href="/insurance.html"
+                          class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--white)]">SIF</a>
+                      </li>
+                      <li><a href="/pms.html"
+                          class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--white)]">PMS</a></li>
+                      <li><a href="/p2p-lending.html"
+                          class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--white)]">Life
+                          Insurance</a></li>
+                      <li><a href="/loan.html"
+                          class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--white)]">Non Life
+                          Insurance</a></li>
+                      <li><a href="/fd.html"
+                          class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--white)]">Fixed
+                          Deposit</a></li>
+                      <li><a href="/fd.html"
+                          class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--white)]">Stock
+                          Broking</a></li>
+                      <li><a href="/riskProfiler.html"
+                          class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--white)]">Risk
+                          Profiler</a></li>
+                    </ul>
+                  </div>
                 </li>
 
                 <!-- Services Dropdown -->
                 <li class="relative group">
                   <button id="servicesDropdownButton" data-dropdown-toggle="servicesDropdown"
-                    class="flex items-center py-2 px-4 font-bold text-lg text-[var(--white)] hover:text-[var(--secondary)] transition duration-300">
+                    class="flex items-center py-2 px-2 font-bold text-md text-[var(--white)] hover:text-[var(--secondary)] transition duration-300">
                     Services
                     <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
                       <path fill-rule="evenodd"
@@ -109,34 +149,28 @@
                   <div id="servicesDropdown" class="z-10 hidden bg-white rounded-lg shadow w-44">
                     <ul class="py-2 text-sm text-gray-700 text-center">
                       <li><a href="/mutualfunds.html"
-                          class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--white)]">Mutual Funds</a>
+                          class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--white)]">Retirement
+                          Planning</a>
                       </li>
                       <li><a href="/insurance.html"
-                          class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--white)]">Insurance</a>
+                          class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--white)]">Goal Based
+                          Planning</a>
                       </li>
                       <li><a href="/pms.html"
-                          class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--white)]">PMS</a></li>
+                          class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--white)]">Tax Planning</a>
+                      </li>
                       <li><a href="/p2p-lending.html"
-                          class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--white)]">P2P
-                          Lending</a></li>
-                      <li><a href="/loan.html"
-                          class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--white)]">Loan
-                          Against
-                          Security</a></li>
-                      <li><a href="/fd.html"
-                          class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--white)]">Fixed
-                          Deposit</a></li>
-                      <li><a href="/riskProfiler.html"
-                          class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--white)]">Risk
-                          Profiler</a></li>
+                          class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--white)]">Financial
+                          Planning</a></li>
                     </ul>
                   </div>
                 </li>
 
+
                 <!-- Calculators Dropdown -->
                 <li class="relative group">
                   <button id="toolsDropdownButton" data-dropdown-toggle="toolsDropdown"
-                    class="flex items-center py-2 px-2 font-bold text-lg text-[var(--white)] hover:text-[var(--secondary)] transition duration-300">
+                    class="flex items-center py-2 px-2 font-bold text-md text-[var(--white)] hover:text-[var(--secondary)] transition duration-300">
                     Calculators
                     <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
                       <path fill-rule="evenodd"
@@ -161,7 +195,7 @@
                 <!-- Research Dropdown -->
                 <li class="relative group">
                   <button id="researchDropdownButton" data-dropdown-toggle="researchDropdown"
-                    class="flex items-center py-2 px-2 font-bold text-lg text-[var(--white)] hover:text-[var(--secondary)] transition duration-300">
+                    class="flex items-center py-2 px-2 font-bold text-md text-[var(--white)] hover:text-[var(--secondary)] transition duration-300">
                     Research
                     <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
                       <path fill-rule="evenodd"
@@ -207,7 +241,7 @@
                 <!-- Knowledge Dropdown -->
                 <li class="relative group">
                   <button id="knowledgeDropDownButton" data-dropdown-toggle="knowledgeDropDown"
-                    class="flex items-center py-2 px-2 font-bold text-lg text-[var(--white)] hover:text-[var(--secondary)] transition duration-300">
+                    class="flex items-center py-2 px-2 font-bold text-md text-[var(--white)] hover:text-[var(--secondary)] transition duration-300">
                     Knowledge
                     <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
                       <path fill-rule="evenodd"
@@ -231,13 +265,13 @@
                 <!-- Contact -->
                 <li>
                   <a href="/contactUs.html"
-                    class="block py-2 px-4 text-lg font-bold text-[var(--white)] hover:text-[var(--secondary)] transition duration-300">Contact</a>
+                    class="block py-2 px-2 text-md font-bold text-[var(--white)] hover:text-[var(--secondary)] transition duration-300">Contact</a>
                 </li>
 
                 <!-- Login -->
                 <li>
                   <a href="/login.html"
-                    class="block py-2 px-4 text-lg font-bold text-[var(--white)] hover:text-[var(--secondary)]">Login</a>
+                    class="block py-2 px-2 text-md font-bold text-[var(--white)] hover:text-[var(--secondary)]">Login</a>
                 </li>
 
               </ul>

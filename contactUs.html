@@ -141,46 +141,81 @@
   </head>
 
   <body>
-    <nav class="bg-[var(--background)] border-gray-200">
+    <nav class="bg-[var(--background)]]  border-gray-200 ">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <!-- Logo -->
+
+        <!-- Logo Left -->
         <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="images/companyLogo.jpg?id=03092025" class="h-28" alt=" Apex Capital Trust Logo" />
+          <img src="images/companyLogo.png" class="h-24" alt="Company Logo" />
         </a>
 
-        <!-- Buttons & Hamburger -->
-        <div class="flex md:order-2 space-x-3 md:space-x-0">
-          <!-- Get Started Button -->
-          <a href="/investorLogin.html"
-            class="!bg-[#1f49a3] text-white hover:text-[#1f49a3] hover:animate-pulse hover:-translate-y-1 transform transition-all duration-300 focus:ring-4 focus:outline-none focus:ring-[var(--secondary)] font-medium rounded-lg text-md px-4 py-2 text-center">
-            Login
-          </a>
+        <!-- Mobile Hamburger -->
+        <button data-collapse-toggle="navbar-default" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-[var(--text)] rounded-lg md:hidden hover:bg-[var(--secondary)] hover:text-[var(--text)] focus:outline-none focus:ring-2 focus:ring-gray-200"
+          aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
 
-          <!-- Mobile Menu Button -->
-          <button data-collapse-toggle="navbar-default" type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-white hover:text-[var(--primary)] focus:outline-none focus:ring-2 focus:ring-white"
-            aria-controls="navbar-default" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
-        </div>
-
-        <!-- Navbar Links -->
+        <!-- Navbar Links Right -->
         <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-default">
-          <ul
-            class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:gap-x-4 md:mt-0 md:border-0">
-            <li
-              class="relative group bg-[#1f49a3] text-white hover:bg-[#3d62b3] hover:text-[var(--white)] rounded transition duration-300">
-              <a href="/about.html" class="block py-2 px-4 text-black w-full">About</a>
+          <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-200 rounded-lg 
+                           md:flex-row md:space-x-4 md:mt-0 md:border-0">
+
+            <!-- About -->
+            <li>
+              <a href="/about.html" class="block py-2 px-2 font-bold text-md text-[var(--text)] hover:text-[var(--white)] hover:bg-[var(--secondary)] rounded-lg transition duration-300
+                             ">About</a>
             </li>
 
             <!-- Services Dropdown -->
-            <li
-              class="relative group bg-[#1f49a3] text-white hover:bg-[#3d62b3] hover:text-[var(--white)] rounded transition duration-300">
+            <li class="relative group">
+              <button id="productsDropdownButton" data-dropdown-toggle="productsDropdown"
+                class="flex items-center py-2 px-2 font-bold text-md text-[var(--text)] hover:text-[var(--white)] hover:bg-[var(--secondary)] rounded-lg transition duration-300">
+                Product
+                <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                    d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.25 8.29a.75.75 0 01-.02-1.06z"
+                    clip-rule="evenodd" />
+                </svg>
+              </button>
+              <div id="productsDropdown" class="z-10 hidden bg-white rounded-lg shadow w-44">
+                <ul class="py-2 text-sm text-gray-700 text-center">
+                  <li><a href="/mutualfunds.html"
+                      class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--text)]">Mutual Funds</a>
+                  </li>
+                  <li><a href="/insurance.html"
+                      class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--text)]">SIF</a>
+                  </li>
+                  <li><a href="/pms.html"
+                      class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--text)]">PMS</a></li>
+                  <li><a href="/p2p-lending.html"
+                      class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--text)]">Life
+                      Insurance</a></li>
+                  <li><a href="/loan.html"
+                      class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--text)]">Non
+                      Life
+                      Insurance</a></li>
+                  <li><a href="/fd.html"
+                      class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--text)]">Fixed
+                      Deposit</a></li>
+                  <li><a href="/fd.html"
+                      class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--text)]">Stock
+                      Broking</a></li>
+                  <li><a href="/riskProfiler.html"
+                      class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--text)]">Risk
+                      Profiler</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <!-- Services Dropdown -->
+            <li class="relative group">
               <button id="servicesDropdownButton" data-dropdown-toggle="servicesDropdown"
-                class="flex items-center py-2 px-4 w-full md:w-auto text-black focus:outline-none">
+                class="flex items-center py-2 px-2 font-bold text-md text-[var(--text)] hover:text-[var(--white)] hover:bg-[var(--secondary)] rounded-lg transition duration-300">
                 Services
                 <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd"
@@ -190,36 +225,30 @@
               </button>
               <div id="servicesDropdown" class="z-10 hidden bg-white rounded-lg shadow w-44">
                 <ul class="py-2 text-sm text-gray-700 text-center">
-                  <li>
-                    <a href="/mutualfunds.html" class="block px-4 py-2 hover:bg-gray-100">Mutual Funds</a>
+                  <li><a href="/mutualfunds.html"
+                      class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--text)]">Retirement
+                      Planning</a>
                   </li>
-                  <li>
-                    <a href="/insurance.html" class="block px-4 py-2 hover:bg-gray-100">Insurance</a>
+                  <li><a href="/insurance.html"
+                      class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--text)]">Goal Based
+                      Planning</a>
                   </li>
-                  <li>
-                    <a href="/pms.html" class="block px-4 py-2 hover:bg-gray-100">PMS</a>
+                  <li><a href="/pms.html"
+                      class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--text)]">Tax
+                      Planning</a>
                   </li>
-                  <li>
-                    <a href="/p2p-lending.html" class="block px-4 py-2 hover:bg-gray-100">P2P Lending</a>
-                  </li>
-                  <li>
-                    <a href="/loan.html" class="block px-4 py-2 hover:bg-gray-100">Loan against Security</a>
-                  </li>
-                  <li>
-                    <a href="/fd.html" class="block px-4 py-2 hover:bg-gray-100">Fixed Deposit</a>
-                  </li>
-                  <li>
-                    <a href="/riskProfiler.html" class="block px-4 py-2 hover:bg-gray-100">Risk Profiler</a>
-                  </li>
+                  <li><a href="/p2p-lending.html"
+                      class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--text)]">Financial
+                      Planning</a></li>
                 </ul>
               </div>
             </li>
 
+
             <!-- Calculators Dropdown -->
-            <li
-              class="relative group bg-[#1f49a3] text-white hover:bg-[#3d62b3] hover:text-[var(--white)] rounded transition duration-300">
+            <li class="relative group">
               <button id="toolsDropdownButton" data-dropdown-toggle="toolsDropdown"
-                class="flex items-center py-2 px-4 w-full md:w-auto text-black rounded focus:outline-none">
+                class="flex items-center py-2 px-2 font-bold text-md text-[var(--text)] hover:text-[var(--white)] hover:bg-[var(--secondary)] rounded-lg transition duration-300">
                 Calculators
                 <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd"
@@ -229,21 +258,22 @@
               </button>
               <div id="toolsDropdown" class="z-10 hidden bg-white rounded-lg shadow w-54">
                 <ul class="py-2 text-sm text-gray-700 text-center">
-                  <li>
-                    <a href="/financialPlanning.html" class="block px-4 py-2 hover:bg-gray-100">Financial
+                  <li><a href="/financialPlanning.html"
+                      class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--text)]">Financial
                       Calculators</a>
                   </li>
-                  <li>
-                    <a href="/goalPlanning.html" class="block px-4 py-2 hover:bg-gray-100">Goal Planning Calculators</a>
+                  <li><a href="/goalPlanning.html"
+                      class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--text)]">Goal Planning
+                      Calculators</a>
                   </li>
                 </ul>
               </div>
             </li>
+
             <!-- Research Dropdown -->
-            <li
-              class="relative group bg-[#1f49a3] text-white hover:bg-[#3d62b3] hover:text-[var(--white)] rounded transition duration-300">
+            <li class="relative group">
               <button id="researchDropdownButton" data-dropdown-toggle="researchDropdown"
-                class="flex items-center py-2 px-4 w-full md:w-auto text-black rounded focus:outline-none">
+                class="flex items-center py-2 px-2 font-bold text-md text-[var(--text)] hover:text-[var(--white)] hover:bg-[var(--secondary)] rounded-lg transition duration-300">
                 Research
                 <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd"
@@ -253,37 +283,43 @@
               </button>
               <div id="researchDropdown" class="z-10 hidden bg-white rounded-lg shadow w-60">
                 <ul class="py-2 text-sm text-gray-700 text-center">
-                  <li>
-                    <a href="/schemeReturn.html" class="block px-4 py-2 hover:bg-gray-100">Scheme Performance</a>
+                  <li><a href="/schemeReturn.html"
+                      class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--text)]">Scheme
+                      Performance</a>
                   </li>
-                  <li>
-                    <a href="/riskMetrics.html" class="block px-4 py-2 hover:bg-gray-100">Scheme Risk Metrics</a>
+                  <li><a href="/riskMetrics.html"
+                      class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--text)]">Scheme Risk
+                      Metrics</a>
                   </li>
-                  <li>
-                    <a href="/schemeTrendsAnalysis.html" class="block px-4 py-2 hover:bg-gray-100">Scheme Trends
+                  <li><a href="/schemeTrendsAnalysis.html"
+                      class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--text)]">Scheme Trends
+                      Analysis</a></li>
+                  <li><a href="/schemeComparison.html"
+                      class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--text)]">Scheme
+                      Comparison
+                      Analysis</a></li>
+                  <li><a href="/sipresearch.html"
+                      class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--text)]">Scheme SIP
+                      Return
                       Analysis</a>
                   </li>
-                  <li>
-                    <a href="/schemeComparison.html" class="block px-4 py-2 hover:bg-gray-100">Scheme Comparison
+                  <li><a href="/swpresearch.html"
+                      class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--text)]">Scheme SWP
+                      Return
                       Analysis</a>
                   </li>
-                  <li>
-                    <a href="/sipresearch.html" class="block px-4 py-2 hover:bg-gray-100">Scheme SIP Return Analysis</a>
-                  </li>
-                  <li>
-                    <a href="/swpresearch.html" class="block px-4 py-2 hover:bg-gray-100">Scheme SWP Return Analysis</a>
-                  </li>
-                  <li>
-                    <a href="/topDecliningNav.html" class="block px-4 py-2 hover:bg-gray-100">Top Declining Scheme
-                      Analysis</a>
-                  </li>
+                  <li><a href="/topDecliningNav.html"
+                      class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--text)]">Top Declining
+                      Scheme
+                      Analysis</a></li>
                 </ul>
               </div>
             </li>
-            <li
-              class="relative group bg-[#1f49a3] text-white hover:bg-[#3d62b3] hover:text-[var(--white)] rounded transition duration-300">
+
+            <!-- Knowledge Dropdown -->
+            <li class="relative group">
               <button id="knowledgeDropDownButton" data-dropdown-toggle="knowledgeDropDown"
-                class="flex items-center py-2 px-4 w-full md:w-auto text-black rounded focus:outline-none">
+                class="flex items-center py-2 px-2 font-bold text-md text-[var(--text)] hover:text-[var(--white)] hover:bg-[var(--secondary)] rounded-lg transition duration-300">
                 Knowledge
                 <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd"
@@ -291,22 +327,31 @@
                     clip-rule="evenodd" />
                 </svg>
               </button>
-              <div id="knowledgeDropDown" class="z-10 hidden bg-white rounded-lg shadow w-60">
+              <div id="knowledgeDropDown" class="z-10 hidden bg-white rounded-lg shadow w-54">
                 <ul class="py-2 text-sm text-gray-700 text-center">
-                  <li>
-                    <a href="/educationalVideos.html" class="block px-4 py-2 hover:bg-gray-100">Educational Videos</a>
+                  <li><a href="/educationalVideos.html"
+                      class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--text)]">Educational
+                      Videos</a>
                   </li>
-                  <li>
-                    <a href="https://www.mutualfundssahihai.com/en/glossary" target="_blank"
-                      class="block px-4 py-2 hover:bg-gray-100">Link To Learn</a>
-                  </li>
+                  <li><a href="https://www.mutualfundssahihai.com/en/glossary"
+                      class="block px-4 py-2 hover:bg-[var(--secondary)] hover:text-[var(--text)]">Link To
+                      Learn</a></li>
                 </ul>
               </div>
             </li>
-            <li
-              class="relative group bg-[#1f49a3] text-white hover:bg-[#3d62b3] hover:text-[var(--white)] rounded transition duration-300">
-              <a href="/contactUs.html" class="block py-2 px-4 text-black w-full">Contact</a>
+
+            <!-- Contact -->
+            <li>
+              <a href="/contactUs.html"
+                class="block py-2 px-2 text-md font-bold text-[var(--text)] hover:text-[var(--white)] hover:bg-[var(--secondary)] rounded-lg transition duration-300">Contact</a>
             </li>
+
+            <!-- Login -->
+            <li>
+              <a href="/login.html"
+                class="block py-2 px-2 text-md font-bold text-[var(--text)] hover:text-[var(--white)] hover:bg-[var(--secondary)] rounded-lg transition duration-300">Login</a>
+            </li>
+
           </ul>
         </div>
       </div>
