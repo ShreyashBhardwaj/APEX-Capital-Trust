@@ -791,6 +791,107 @@
           </div>
         </div>
       </section>
+      <section class="mt-7 bg-transparent flex items-center justify-center min-h-screen"
+        style="padding: 2.5rem; background-image: url(images/download.svg?id=08092025v2)" data-aos="zoom-in"
+        data-aos-duration="1000">
+        <div class="max-w-6xl w-full bg-white shadow-lg rounded-2xl" style="padding: 2.5rem">
+          <h2 class="text-3xl font-bold text-custom-maroon text-center mb-4 animate-slide-in visible">
+            Mutual Fund Scheme Research
+          </h2>
+          <p class="text-gray-900 text-center mb-8 text-lg animate-slide-in visible">
+            At MF Today, our core aim is to serve our clients with dedication
+            and integrity, meet their expectations, and build enduring
+            relationships.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 animate-slide-in2 visible">
+            <div class="flex items-center space-x-6 m-4">
+              <img src="images/accounting.png" alt="SIP Calculator" class="w-16 h-16" />
+              <div>
+                <h3 class="text-xl font-bold">Scheme Performance</h3>
+                <p class="text-gray-900">
+                  It tells you how much wealth you can create by making monthly
+                  investment
+                </p>
+                <a href="/schemeReturn.html" class="text-blue-600 font-semibold">Calculate Now →</a>
+              </div>
+            </div>
+            <div class="flex items-center space-x-6 m-4">
+              <img src="images/accounting-1.png" alt="SIP Delay Calculator" class="w-16 h-16" />
+              <div>
+                <h3 class="text-xl font-bold">Risk Metrics</h3>
+                <p class="text-gray-900">
+                  Tells you how stable or volatile your scheme is.
+                </p>
+                <a href="/riskMetrics.html" class="text-blue-600 font-semibold">Calculate Now →</a>
+              </div>
+            </div>
+            <div class="flex items-center space-x-6 m-4">
+              <img src="images/percentage.png" alt="SIP Step-Up Calculator" class="w-16 h-16" />
+              <div>
+                <h3 class="text-xl font-bold">Scheme Trends</h3>
+                <p class="text-gray-900">
+                  Find out how your scheme is trending right now.
+                </p>
+                <a href="/schemeTrendsAnalysis.html" class="text-blue-600 font-semibold">Calculate Now →</a>
+              </div>
+            </div>
+            <div class="flex items-center space-x-6 m-4">
+              <img src="images/accounting.png" alt="SIP Calculator" class="w-16 h-16" />
+              <div>
+                <h3 class="text-xl font-bold">Scheme Comparison</h3>
+                <p class="text-gray-900">
+                  See how your scheme performs against others.
+                </p>
+                <a href="/schemeComparison.html" class="text-blue-600 font-semibold">Calculate Now →</a>
+              </div>
+            </div>
+            <!-- Lottie Container -->
+            <div class="flex w-full justify-center items-center">
+              <div id="lottie-container" style="width: 13rem; height: 13rem;"></div>
+            </div>
+            <div class="flex items-center space-x-6 m-4">
+              <img src="images/percentage.png" alt="SIP Step-Up Calculator" class="w-16 h-16" />
+              <div>
+                <h3 class="text-xl font-bold">SIP Calculator</h3>
+                <p class="text-gray-900">
+                  Tracks the total value built from your SIPs
+                </p>
+                <a href="/sipresearch.html" class="text-blue-600 font-semibold">Calculate Now →</a>
+              </div>
+            </div>
+            <div class="flex items-center space-x-6 m-4">
+              <img src="images/a1.png" alt="Financial Goal Calculator" class="w-16 h-16" />
+              <div>
+                <h3 class="text-xl font-bold">SWP Calculator</h3>
+                <p class="text-gray-900">
+                  Plans retirement cash flow from your investments.
+                </p>
+                <a href="/swpresearch.html" class="text-blue-600 font-semibold">Calculate Now →</a>
+              </div>
+            </div>
+            <div class="flex items-center space-x-6 m-4">
+              <img src="images/a2.png" alt="Financial Health Check" class="w-16 h-16" />
+              <div>
+                <h3 class="text-xl font-bold">Most Declining NAV</h3>
+                <p class="text-gray-900">
+                  Tracks funds with sharp downward trends
+                </p>
+                <a href="/topDecliningNav.html" class="text-blue-600 font-semibold">Calculate Now →</a>
+              </div>
+            </div>
+            <div class="flex items-center space-x-6 m-4">
+              <img src="images/a3.png" alt="Financial Fact Finder" class="w-16 h-16" />
+              <div>
+                <h3 class="text-xl font-bold">NAV Tracker</h3>
+                <p class="text-gray-900">
+                  Tracks daily NAV so you don’t have to
+                </p>
+                <a href="/navTracker.html" class="text-blue-600 font-semibold">Calculate Now →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- <section class="py-16">
         <div class="max-w-7xl mx-auto px-4">
           <div class="mb-12 text-center md:text-left">
@@ -1169,7 +1270,22 @@
       });
     </script>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+    <script>
+      // Load your Lottie JSON animation
+      var animation = lottie.loadAnimation({
+        container: document.getElementById('lottie-container'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: '/video/lottie2.json' // <-- update this to your Lottie JSON file path
+      });
+    </script>
+    <script>
+      document.getElementById("getStarted").addEventListener("click", () => {
+        window.location.href = "/investorLogin.html";
+      });
+    </script>
   </body>
 
 </html>
