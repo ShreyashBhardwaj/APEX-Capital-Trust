@@ -3,8 +3,11 @@
 :root {
   --text: #000000; /* Black for text */
   --background: #ffffff; /* White background */
-  --primary: #6a1b1a; /* Maroon from your logo */
-  --secondary: #e6aa33; /* Gold/Metallic accent */
+  --primary: #ce1d23; /* Maroon from your logo */
+  --primary-dark: #a3151a; /* Darker maroon */
+  --primary-light: #e25b58; /* Lighter maroon */
+  --secondary: #0000aa; /* Gold/Metallic accent */
+  --secondary-dark: #000085; /* Darker gold */
   --accent: #800002; /* Optional deeper maroon/red */
   --white: #ffffff; /* White color */
 }
