@@ -98,6 +98,21 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.545);
 }
 
+/* White overlay on background */
+.overlay-section::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* top:0; right:0; bottom:0; left:0; */
+  background-color: rgba(255, 255, 255, 0.677); /* white with 50% opacity */
+  z-index: 0; /* behind content */
+}
+
+/* Make sure your content stays above the overlay */
+#about-us > div {
+  position: relative;
+  z-index: 1;
+}
+
 @keyframes float {
   0%,
   100% {
