@@ -175,6 +175,15 @@ body {
   box-shadow: 0 10px 30px var(--secondary);
 }
 
+.navHover {
+  transition: all 0.1s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.navHover:hover {
+  color: var(--white);
+  background-color: var(--secondary);
+}
+
 /* White overlay on background */
 .overlay-section::before {
   content: "";
@@ -283,7 +292,7 @@ body {
   color: #fff;
   border-radius: 8px;
   text-decoration: none;
-  background-color: var(--primary);
+  background-color: var(--primary) !important;
   border: 2px solid var(--primary);
   /* background-color: rgba(0, 0, 0, 0.7); Semi-transparent background */
   transition: all 0.1s ease;
@@ -291,14 +300,14 @@ body {
 
 .carousel-button:hover {
   transform: translateY(-5px);
-  background-color: white;
+  background-color: white !important;
   color: var(--primary);
   box-shadow: 0 10px 30px var(--primary);
 }
 
 .carousel-button.secondary {
   color: #fff;
-  background-color: var(--secondary);
+  background-color: var(--secondary) !important;
   transition: all 0.1s ease;
 }
 
