@@ -285,85 +285,59 @@
         </div>
       </nav>
     </header>
+
     <main>
-      <section id="hero-carousel" class="relative w-full h-[500px] md:h-[600px] lg:h-[625px]">
-        <!-- Swiper Container -->
-        <div class="swiper heroSwiper  h-full">
-          <div class="swiper-wrapper">
+      <section class="animate-fade-in bg-white fade-in" style="
+        background-image: linear-gradient(
+          to bottom right,
+          #ce1d23,
+          #ff8a8e 90%
+        );
+        margin-top: 1.75rem;
+      ">
+        <div class="mt-5 grid max-w-screen-xl px-4 py-4 mx-auto lg:gap-8 xl:gap-0 lg:py-4 lg:grid-cols-12">
+          <div class="mr-auto place-self-center lg:col-span-7">
+            <h1 style="color: #fff"
+              class="max-w-2xl mt-10 mb-4 text-3xl font-extrabold tracking-tight leading-none md:text-3xl xl:text-3xl">
+              Empowering Growth with
+              <u>Apex Capital Trust </u>
+            </h1>
+            <h5 style="color: #fff"
+              class="max-w-2xl mb-4 text-lg font-bold tracking-tight leading-none md:text-lg xl:text-lg">
+              AMFI-registered Mutual Fund Distributor (ARN - 336469)
+            </h5>
+            <br>
+            <p style="color: #fff" class="max-w-2xl my-2 font-medium lg:mb-2 md:text-lg lg:text-2xl">
+              Build Wealth With
+            </p>
+            <ul style="color: #fff; list-style-type: disc; margin-left: 1.5rem"
+              class="max-w-xl mb-6 font-medium lg:mb-8">
+              <li>Safety & Stability (Govt. Securities, Debt, Liquid Funds)</li>
+              <li>Growth Opportunities (Direct Stocks, Mutual Funds)</li>
+              <li>Advanced Strategies (Options & Futures)</li>
+            </ul>
 
-            <!-- Slide 1 -->
-            <div class="swiper-slide bg-cover bg-center flex items-center justify-center"
-              style="background-image: url('images/hero1.png');">
-              <div class=" w-full h-full flex items-center justify-left ">
-                <div class="text-center text-white px-6 max-w-2xl ml-0 lg:ml-10">
-                  <h2 class="text-4xl md:text-5xl font-bold mb-4">Achieve Financial Goals</h2>
-                  <p class="text-lg mb-6">Tailored strategies to grow and protect your wealth.</p>
-                  <div class="flex justify-center gap-4">
-                    <a href="/services.html"
-                      class="bg-[var(--primary)] text-white px-6 py-3 rounded-full hover:bg-white hover:text-[var(--primary)] transition">
-                      View Services
-                    </a>
-                    <a href="/contact.html"
-                      class="bg-white text-[var(--primary)] px-6 py-3 rounded-full hover:bg-gray-100 transition">
-                      Contact Us
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Slide 2 -->
-            <div class="swiper-slide bg-cover flex items-center justify-center"
-              style="background-image: url('images/hero4.jpg');">
-              <div class="bg-black/30 w-full h-full flex items-center justify-left">
-                <div class="text-center text-[var(--white)] px-6 max-w-2xl ml-10">
-                  <h2 class="text-4xl md:text-5xl font-bold mb-4">Invest with Confidence</h2>
-                  <p class="text-lg mb-6">Expert advice to secure your financial future.</p>
-                  <div class="flex justify-center gap-4">
-                    <a href="/mutualfunds.html"
-                      class="bg-[var(--primary)] text-white px-6 py-3 rounded-full hover:bg-white hover:text-[var(--primary)] transition">
-                      Mutual Funds
-                    </a>
-                    <a href="/insurance.html"
-                      class="bg-white text-[var(--primary)] px-6 py-3 rounded-full hover:bg-gray-100 transition">
-                      Insurance Plans
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Slide 3 -->
-            <div class="swiper-slide bg-cover bg-center flex items-center justify-center"
-              style="background-image: url('images/hero3.png');">
-              <div class="bg-black/30 w-full h-full flex items-center justify-left">
-                <div class="text-center text-white px-6 max-w-3xl ml-10">
-                  <h2 class="text-4xl md:text-5xl font-bold mb-4">Your Trusted Financial Partner</h2>
-                  <p class="text-lg mb-6">Comprehensive solutions for your investment needs.</p>
-                  <div class="flex justify-center gap-4">
-                    <a href="/goalPlanning.html"
-                      class="bg-[var(--primary)] text-white px-6 py-3 rounded-full hover:bg-white hover:text-[var(--primary)] transition">
-                      Goal Planning
-                    </a>
-                    <a href="/contact.html"
-                      class="bg-white text-[var(--primary)] px-6 py-3 rounded-full hover:bg-gray-100 transition">
-                      Contact Us
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+            <a href="/financialPlanning.html" id="getStarted"
+              class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300">
+              Plan For Your Goals
+              <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </a>
+            <a href="/contactUs.html"
+              class="inline-flex items-center justify-center mobile-top px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg bg-gray-100 focus:ring-4 focus:ring-gray-100">
+              Connect With Us
+            </a>
           </div>
-
-          <!-- Navigation Buttons -->
-          <div class="swiper-button-next text-white"></div>
-          <div class="swiper-button-prev text-white"></div>
-          <!-- Pagination Dots -->
-          <div class="swiper-pagination"></div>
+          <div class="mobileHidden lg:col-span-5 lg:flex" style="margin-top: 12%; margin-left: 5%">
+            <img style="height: 80%; width: 90%" src="/images/heroPicture.png?id=21072025" alt="mockup"
+              data-aos="fade-right" data-aos-delay="700" data-aos-duration="1000" class="aos-init aos-animate">
+          </div>
         </div>
       </section>
-
       <section id="Pricing" class="mt-5">
         <div class="mx-auto max-w-screen-7xl">
           <h2
@@ -1363,6 +1337,7 @@
           </div>
         </div>
       </section> -->
+
       <section class="mt-10">
         <div class="my-10 animate-fade-in px-4 mx-auto max-w-screen-xl text-center lg:py-4 lg:px-6 fade-in">
           <div class="mx-auto max-w-screen-sm">
