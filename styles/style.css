@@ -153,25 +153,16 @@ body {
 
 .box-shadowprimary {
   transition: all 0.2s cubic-bezier(0.4, 0, 1, 1);
-}
-
-.box-shadowprimary:hover {
   box-shadow: 0 10px 30px var(--primary);
 }
 
 .box-shadowaccent {
   transition: all 0.2s cubic-bezier(0.4, 0, 1, 1);
-}
-
-.box-shadowaccent:hover {
   box-shadow: 0 10px 30px var(--accent);
 }
 
 .box-shadowsecondary {
   transition: all 0.2s cubic-bezier(0.4, 0, 1, 1);
-}
-
-.box-shadowsecondary:hover {
   box-shadow: 0 10px 30px var(--secondary);
 }
 
